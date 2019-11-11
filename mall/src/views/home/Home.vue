@@ -28,9 +28,10 @@
     },
     created() {
       getHomeMultidata().then(res=>{
-        console.log(res);
+        // console.log(res);
         // this.result = res
-        this.banner = res.data.banner.list
+        this.banners = res.data.banner.list
+        // console.log(res.data.banner.list);
         this.recommeds = res.data.recommend.list
       })
     }
